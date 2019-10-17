@@ -1,0 +1,34 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server of the RP GAME",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dayenkai/BAWI_RPGAME.git"
+  },
+  "keywords": [
+    "RP",
+    "GAME",
+    "APP"
+  ],
+  "author": "Bawilu-Mafuta Beker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dayenkai/BAWI_RPGAME/issues"
+  },
+  "homepage": "https://github.com/Dayenkai/BAWI_RPGAME#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jwt-simple": "^0.5.6",
+    "mongo": "^0.1.0",
+    "mongod": "^2.0.0",
+    "mongoose": "^5.7.3",
+    "password-hash": "^1.2.2"
+  }
+}
