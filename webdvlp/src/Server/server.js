@@ -9,7 +9,7 @@ var server = express();
 
 server.use(bodyParser.json());
 // Instantiate server
-var uri = 'mongodb://localhost:27017/tutoriel'
+var uri = "mongodb+srv://native:bekerleboss@databaseemysarbek-g43vk.gcp.mongodb.net/test?retryWrites=true&w=majority"
 
 //Import Routes
 const postsRoute = require('./routes/posts');
@@ -26,7 +26,7 @@ server.get("/", function(req, res){
 
 
 // Connect to DB
-mongoose.connect('mongodb://localhost:27017/tutoriel', 
+mongoose.connect(uri, 
 { useNewUrlParser: true, useUnifiedTopology: true},
  function (err, db){
     console.log("Connected to tutoriel Mongo Database");
