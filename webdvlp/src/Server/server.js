@@ -4,6 +4,7 @@ var MongoClient = require('mongodb').MongoClient;
 var mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 var server = express();
+console.log("Waiting for the Database Connection Establishment...")
 
 //DAMN MA MAN
 
@@ -29,7 +30,7 @@ server.get("/", function(req, res){
 mongoose.connect(uri, 
 { useNewUrlParser: true, useUnifiedTopology: true},
  function (err, db){
-    console.log("Connected to tutoriel Mongo Database");
+    console.log("Connected to Mongo Atlas Database / Uri : (@databaseemysarbek-g43vk.gcp.mongodb.net)");
     });
 
 
