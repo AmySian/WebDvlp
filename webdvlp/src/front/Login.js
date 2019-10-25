@@ -23,6 +23,7 @@ class Login extends Component {
     event.preventDefault();
     if (this.state.email==="web@et.esiea.fr" && this.state.password==="123") {
     alert("Logged in");
+    
     } else {
     alert("Wrong password or email");
     }
@@ -30,16 +31,21 @@ class Login extends Component {
 
 handleClick = event => {
   console.log("click");
+
 }
 
   render() {
     console.log(this.state.email);
+    if (this.state.email==="web@et.esiea.fr" && this.state.password==="123") {
+      alert("Logged in");}
+      
+      else {
     return (
       <div className="Login">
         <form onSubmit={this.handleSubmit}>
-        <p>Email
+        <p> <h3>Email</h3>
         <input type="email" name="email" minLength="1" onChange={this.handleChange} />
-        Password
+        <h3>Password</h3>
         <input type="password" name="password" minLength="3" onChange={this.handleChange} />
         </p>
         <input type='submit' value="Log in" onClick={this.handleClick} />
@@ -47,5 +53,6 @@ handleClick = event => {
       </div>
     );
   }
+}
 }
 export default Login

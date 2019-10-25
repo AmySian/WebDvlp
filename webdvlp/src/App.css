@@ -1,15 +1,45 @@
 .App {
+	
   text-align: center;
 }
+Header {
+	font-family: 'CorbenR';
+	height: 5vmax;
+  }
+
+p {
+	height:50vmin;
+  }
+
+
+
+Footer {
+	height: 0em;
+	color: #666;
+	font-family: 'CorbenR';
+  }
+
+h2{
+	color: #FFC107;
+	font-family: 'CorbenR';
+	height: 0vmin;
+}
+
+h1{
+	color: #FFC107;
+	font-size: 40px;
+	font-family: 'CorbenB';
+}
+
 
 .App-logo {
   height: 40vmin;
 }
 
-
+/* 
 
 .App-header {
-  min-height: 100vh;
+  min-height: 500vh;
   font-family: 'Geometric', serif;
   display: flex;
   flex-direction: column;
@@ -22,11 +52,10 @@
 
 /* Reset */
 
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
 		border: 0;
-		font-size: 100%;
 		vertical-align: baseline;
 	}
 
@@ -38,6 +67,7 @@
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
+		
 	}
 
 
@@ -64,9 +94,8 @@
 
 
 
-	h1, h2, h3, h4, h5, h6 {
-		color: #666;
-	}
+
+
 
 
 
@@ -78,44 +107,29 @@
 	input[type="button"],
 	button,
 	.button {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
 		border-radius: 2em;
-		border: 0;
+		border: none;
 		cursor: pointer;
 		display: inline-block;
+		width: 17%;
 		font-size: 0.8em;
 		font-weight: bold;
 		height: 3.5em;
-		letter-spacing: 0.1em;
-		line-height: 3.65em;
-		padding: 0 3em;
 		text-align: center;
 		text-decoration: none;
 		text-transform: uppercase;
-		white-space: nowrap;
+		transition: 0.3s;
+		opacity: 0.6;
 	}
-
-
-
-			input[type="submit"].special:active,
-			input[type="reset"].special:active,
-			input[type="button"].special:active,
-			button.special:active,
-			.button.special:active {
-				background-color: #00a377;
-			}
+	.button:hover {opacity: 1}
 
 /* Form */
 
 	form {
-		margin: 0 0 2em 0;
+		margin: 0em 10em 2em 10em;
+	
+		
 	}
 
 	label {
@@ -189,7 +203,7 @@
 	input[type="password"],
 	input[type="email"],
 	select {
-		height: 2.75em;
+		height: 2em;
 	}
 
 
@@ -200,7 +214,7 @@
 		}
 
 	input[type="checkbox"] + label:before {
-		border-radius: 0;
+		border-radius: 0; 
 	}
 
 	label {
