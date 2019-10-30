@@ -9,9 +9,10 @@ class App extends Component {
     return (
       <div className="App">
         <Header/>
-        <h1>Hello, React!</h1>
+        <h1>Choose Your Seat !</h1>
         <Login/>
         <Footer/>
+        <h2>Hello, React!</h2>
       </div>
     )
   }
