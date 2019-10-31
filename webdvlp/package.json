@@ -5,6 +5,7 @@
   "dependencies": {
     "react": "^16.10.2",
     "react-bootstrap-validation": "^0.1.11",
+    "react-burger-menu": "^2.6.11",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0"
   },
