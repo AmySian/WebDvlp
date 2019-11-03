@@ -1,16 +1,22 @@
 import React from "react";
 import { slide as Menu } from "react-burger-menu";
+import{ Link } from "react-router-dom";
 
-export default props => {
+function Sidebar() {
+  const menuStyle = {
+    color:"white"  
+  };
   return (
     <Menu>
-      <a className="menu-item" href="/">
-        Home
-      </a>
-
-      <a className="menu-item" href="/more">
-        More
-      </a>
+      <ul className="menu-links">
+        <Link to="/" style={menuStyle}>
+          <li>Home</li>
+        </Link>
+        <Link to="/about" style={menuStyle}>
+          <li>About</li>
+        </Link>
+      </ul>
     </Menu>
   );
 };
+export default Sidebar;
