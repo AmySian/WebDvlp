@@ -7,11 +7,9 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   }
-
 @font-face {
   font-family: 'CorbenR';
   src: local('CorbenR'), url(./font/Corben-Regular.ttf) format('truetype');
   font-family: 'CorbenB';
   src: local('CorbenB'), url(./font/Corben-Bold.ttf) format('truetype');
-
 }

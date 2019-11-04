@@ -3,6 +3,7 @@ import React, { Component } from "react";
 //import "./Login.css";
 //import "./App.css";
 
+
 class Login extends Component {
   constructor(props) {
     super(props);
@@ -35,9 +36,13 @@ handleClick = event => {
 }
 
   render() {
+  
     console.log(this.state.email);
-    if (this.state.email==="web@et.esiea.fr" && this.state.password==="123") {
-      alert("Logged in");}
+    if (this.state.email==="web@et.esiea.fr" && this.state.password==="123"){
+      return(
+        alert("Lod in")
+        )
+      }
       
       else {
     return (
@@ -55,4 +60,6 @@ handleClick = event => {
   }
 }
 }
+
+
 export default Login
