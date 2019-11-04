@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import './App.css';
-import Login from './front/Login.js';
 import SideBar from "./front/Sidebar.js";
 import About from "./front/About.js";
 import Home from "./front/Home.js";
@@ -16,7 +15,6 @@ class App extends Component {
             <Route path="/about" component={About} />
             <Route path="/" exact component={Home} />
           </Switch>
-          <Login/>
         </div>
       </Router>
     )
