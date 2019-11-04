@@ -1,12 +1,27 @@
 
 body, html {
   height: 100%;
-  background-image: url("https://www.canon.co.nz/-/media/new-zealand/stories/rach-stewart/rach-stewart-7-southern-alps.ashx?la=en-nz");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   }
+
+.App
+{
+  
+}
+
+.navbar-dark
+{
+  background-image: url("front/HEADER-BACKGROUND.png");
+}
+
+.Dashboard
+{
+  text-align: center;
+}
+
 
 @font-face {
   font-family: 'CorbenR';
@@ -14,4 +29,41 @@ body, html {
   font-family: 'CorbenB';
   src: local('CorbenB'), url(./font/Corben-Bold.ttf) format('truetype');
 
+}
+
+#conteneur
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 2px black solid;
+	height: 500px;
+	width: 20%;
+	background-image: linear-gradient(black, white);
+	color: white;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.element
+{
+	margin: 2%;
+	padding : 50px;
+	width: 20%;
+}
+
+#element1
+{
+	border-radius: 10px;
+}
+
+#element2
+{
+	border-radius: 10px;
+}
+
+#element3
+{
+	border-radius: 10px;
 }

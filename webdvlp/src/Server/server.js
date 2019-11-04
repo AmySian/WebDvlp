@@ -3,14 +3,18 @@ var express = require('express');
 var MongoClient = require('mongodb').MongoClient;
 var mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+var cors = require('cors');
 var server = express();
 console.log("Waiting for the Database Connection Establishment...")
 
 //DAMN MA MAN
 
+server.use(cors())
+
 server.use(bodyParser.json());
 // Instantiate server
 var uri = "mongodb+srv://native:bekerleboss@databaseemysarbek-g43vk.gcp.mongodb.net/test?retryWrites=true&w=majority"
+//var uri ="mongodb://localhost:27017/tutoriel"
 
 //Import Routes
 const postsRoute = require('./routes/posts');

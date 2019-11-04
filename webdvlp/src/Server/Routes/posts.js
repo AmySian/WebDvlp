@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Post = require('../models/Post')
+const Post = require('../models/Users')
 const Postproduct = require('../models/Products')
 
 //GET BACK ALL THE THE POST
@@ -32,13 +32,26 @@ router.get("/products", async function(req, res){
 router.post('/users', async function(req, res){
     const post = new Post({
         user: req.body.user,
-        address: req.body.address,
         password: req.body.password,
-        product_list: req.body.product_list
     });
     try{
-   const savedPost = await post.save();
-   res.json(savedPost);
+    var ifconnected = 0;
+    const dbaccounts = await Post.find();
+    dbaccounts.forEach(post=>{
+        if (req.body.user === post.user && req.body.password === post.password)
+        {
+            ifconnected = 1;
+        }
+    })
+    if (ifconnected == 1)
+    {
+        console.log(post.user+" found.  You are connected !");
+        res.json({validation: "User found, Connected"})
+    }
+    else
+    res.json({validation: "User not found, Connection refused"});
+    /*const savedPost = await post.save();
+   res.json(savedPost);*/
     }catch(err){
         res.json({message: error});
     };

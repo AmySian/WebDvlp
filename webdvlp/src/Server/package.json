@@ -29,6 +29,7 @@
     "mongo": "^0.1.0",
     "mongod": "^2.0.0",
     "mongoose": "^5.7.3",
-    "password-hash": "^1.2.2"
+    "password-hash": "^1.2.2",
+    "react-bootstrap": "^1.0.0-beta.14"
   }
 }
