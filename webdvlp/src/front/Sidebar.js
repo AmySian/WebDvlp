@@ -15,6 +15,9 @@ function Sidebar() {
         <Link to="/about" style={menuStyle}>
           <li>About</li>
         </Link>
+        <Link to="/dashboard" style={menuStyle}>
+          <li>Dashboard</li>
+        </Link>
       </ul>
     </Menu>
   );
