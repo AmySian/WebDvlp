@@ -1,7 +1,7 @@
 import Chart from 'react-apexcharts'
 import React, { Component } from 'react'
 
-class Pie extends React.Component {
+class Pie extends Component {
       
     constructor(props) {
       super(props);

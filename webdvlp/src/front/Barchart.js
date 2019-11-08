@@ -1,9 +1,10 @@
 import Chart from 'react-apexcharts'
 import React, { Component } from 'react'
 //import './Barchart.css';
-import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 
-class Barchart extends Component {constructor(props) {
+
+class Barchart extends Component {
+  constructor(props) {
     super(props);
 
     this.state = {
@@ -13,12 +14,12 @@ class Barchart extends Component {constructor(props) {
           shadow: {
             enabled: true,
             blur: 1,
-            opacity: 0.5
+            opacity: 0.5,
           }
         },
         plotOptions: {
           bar: {
-            horizontal: true,
+            horizontal: false,
             barHeight: '60%',
           },
         },
@@ -26,7 +27,7 @@ class Barchart extends Component {constructor(props) {
           enabled: false
         },
         stroke: {
-          width: 2,
+          width: 1,
         },
         title: {
           text: 'Compare Sales Strategy'

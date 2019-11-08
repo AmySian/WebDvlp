@@ -3,7 +3,7 @@
 	text-align: center;
   }
   Header {
-	  font-family: 'CorbenR';
+	  
 	  height: 5vmax;
 	}
   
@@ -11,7 +11,38 @@
 	  height:50vmin;
 	}
   
-  
+  /*MOBILE DEVICES*/
+@media  (min-width: 500px){
+	h1{
+		font-size: 40px;
+	}
+	
+	.barchart{
+		
+		display: all;
+		width: 500px;
+		height: 5px;
+		margin-left: 70px;
+		
+		
+	}
+	.pie{
+		display: all;
+		height: 50px;
+		width: 90px;
+		margin-left: 500px;
+	}
+	.spline{
+		display: all;
+		width: 300px;
+		margin-left: 900px;
+		
+		
+	}
+}
+
+/*MOBILE DEVICES*/
+
   
   Footer {
 	  height: 0em;
@@ -312,4 +343,3 @@
 	  .bm-overlay {
 		background: rgba(0, 0, 0, 0.3);
 	  }
-

@@ -1,10 +1,10 @@
 import Chart from 'react-apexcharts'
 import React, { Component } from 'react'
 //import './Barchart.css';
-import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 
 
-class Spline extends React.Component {
+
+class Spline extends Component {
       
     constructor(props) {
       super(props);
